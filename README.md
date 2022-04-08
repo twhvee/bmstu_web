@@ -22,7 +22,7 @@
 Актуальность разработки состоит в том, что с помощью такого сервиса человек сможет сэкономить время на подборе новых книг для себя и так же 
 выложить свое мнение о книгах и обсудить их путем комментирования рецензий.
 ## Use-Case - диаграмма
-![Use-case](https://github.com/twhvee/db/blob/main/usecase.jpg)
+![Use-case](https://github.com/twhvee/db/blob/main/use-case.jpg)
 
 ## ER-диаграмма сущностей
 ![er](https://github.com/twhvee/db/blob/main/er.jpg)
