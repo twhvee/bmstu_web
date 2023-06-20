@@ -49,3 +49,7 @@
 # Cущности системы
 
 ![db2](db2jpg.jpg)
+
+# Макет
+
+https://www.figma.com/file/6Q9fchmf8O9Lam2ivbtkZR/RevWorld?type=design&node-id=74%3A644&t=pEfxpum23Cl5seiQ-1
