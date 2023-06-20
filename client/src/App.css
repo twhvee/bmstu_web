@@ -1,0 +1,455 @@
+
+
+.footer_text {
+  font-family: "Inria Serif";
+  color: #957230;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  align-items: center;
+}
+
+
+nav{
+  position: fixed;
+  height: 56px;
+  width: 100%;
+  background-color: #2C2C2C;
+  z-index: 56;
+}
+
+.nav-wrapper{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+i{
+  color: #957230;
+  height: 40px;
+  width: 40px;
+}
+
+.burger-btn{
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+
+.Logo-nav{
+  font-family: "Inria Serif";
+  color: #957230;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  align-items: center;
+}
+
+.menu{
+  position: fixed;
+  margin-left: auto;
+  right:0px;
+  top : 56px;
+  width: 198px;
+  transform: translateX(+100%);
+  background-color: #2C2C2C;
+  transition: all 0.4s;
+}
+
+.menu.active{
+  transform: translateX(0);
+}
+
+a{
+  color : #EEEEEE;
+  text-decoration: none;
+  font-family: "Inter";
+  font-weight: 14;
+}
+
+ul{
+  padding-right: 40px;
+  text-align:center;
+  
+}
+ul li {
+  width: 100%;
+  display:inline-block;
+  height: 36px;
+  
+}
+
+ul li :hover{
+  color : #D8C9A6;
+  background-color: #957230;
+}
+
+
+
+
+
+.label {
+  width : 300px;
+  text-transform: uppercase;
+  color: white;
+  text-align: left;
+}
+
+.input {
+  width: 300px;
+  color: #fff;
+  display: block;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  background: rgba(255,255,255,.1);
+}
+
+h1{
+  color : white;
+  text-align: center;
+}
+
+.hr {
+  width: 300px;
+  height: 2px;
+  margin: 20px 0 20px 0;
+  background: rgba(255,255,255,.2);
+}
+
+.but {
+  width: 300px;
+  background-color: #1161ee;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+}
+
+.but:hover {
+      background-color: #0b0e1e;
+  }
+
+.log{
+  width: "100pt";
+  align-items: "center";
+  justify-content: center;
+  padding-left: 105px;
+  
+}
+
+
+.buttonHome{
+  margin-top: 50px;
+  height: 40px;
+  width: 130px;
+  text-align: center;
+  background-color: #EEEEEE;
+  border-radius: 70px;
+  border-color: #2C2C2C;
+  color:#2C2C2C;
+}
+
+.JumboBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  margin-top: 30px;
+  font-family: 'Inter';
+  font-size: 36px;
+  color:#957230;
+}
+.container-fluid .jumbotron, .container .jumbotron {
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px)
+{
+.container-fluid .jumbotron, .container .jumbotron {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+}
+
+#menu{
+  color: #957230;
+}
+
+@media screen and (min-width: 768px)
+{
+.jumbotron {
+    padding-bottom: 48px;
+    padding-top: 48px;
+}
+}
+
+
+
+.jumbotron {
+  background-color: #eee;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.bookBlock{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cardBook{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 310px;
+  width: 180px;
+  margin: 30px;
+  text-align: center;
+}
+
+
+.TextBookName{
+  text-align: center;
+  font-family: 'Inria Serif';
+  font-size: 20px;
+  color:#2C2C2C;
+  text-transform: uppercase;
+}
+
+.TextAuthor{
+  font-family: 'Inria Serif';
+  font-size: 20px;
+  color:#957230;
+
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.userblock{
+  height: 330px;
+  width: 1400px;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  margin-bottom: 80px;
+}
+
+.userblockprofile{
+  height: 330px;
+  width: 2000px;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  margin-bottom: 80px;
+}
+
+
+.TitleUser{
+  margin-bottom: 30px;
+  font-family: 'Inria Serif';
+  text-align: center;
+  color: #957230;
+}
+
+.userback{
+  height: 210px;
+  width: 1300px;
+  
+  
+ 
+  margin-left: 24px;
+  margin-right: 29px;
+  margin-top: 75px;
+  background: #D8C9A6;
+}
+
+.userbackprofile{
+  height: 210px;
+  width: 90%;
+  
+  
+ 
+  margin-left: 74px;
+  margin-right: 29px;
+  margin-top: 75px;
+  background: #D8C9A6;
+}
+
+.username{
+  position: absolute;
+  width: 184px;
+  height: 35px;
+  margin-left: 373px;
+  margin-top: 300px;
+
+  /* MainTtleText */
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* MainColor */
+
+  color: #2C2C2C;
+}
+
+.usernameprofile{
+  position: absolute;
+  width: 184px;
+  height: 35px;
+  left: 363px;
+  top: 300px;
+
+  /* MainTtleText */
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* MainColor */
+
+  color: #2C2C2C;
+}
+
+.useremail{
+  position: absolute;
+  width: 201px;
+  height: 29px;
+  margin-left:  373px;
+  margin-top:  355px;
+
+  /* SecondaryTitleText */
+
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* TextColorPrimary */
+
+  color: black;
+
+}
+
+.signout{
+  margin-top: 30px;
+  position: absolute;
+  width: 103px;
+  height: 31px;
+  left: 79px;
+  top: 65px;
+
+  font-family: 'Inria Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+
+/* TextColorPrimary */
+
+color: #8D8F92;
+
+
+/* MainColor */
+
+background: #2C2C2C;
+border-radius: 20px;
+}
+.useravatar{
+  position: absolute;
+  width: 215px;
+  height: 196px;
+  margin-left: 119px;
+  margin-top:  184px;
+}
+
+.blockuser{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+}
+
+.deleteuser{
+  margin-top: 70px;
+  border: none;
+  background: white;
+  height: 30px;
+  width: 30px;
+}
+
+.container-wrapuser{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar{
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  border-color: white;
+  border-width: 4px;
+  border-style: solid;
+}
+
+.profileblock{
+  width: 1900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.avatar{
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  border-color: white;
+  border-width: 4px;
+  border-style: solid;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

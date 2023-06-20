@@ -1,0 +1,129 @@
+.main {
+  
+
+  
+    width: 1100px;
+    height: 720px;
+   
+  
+    background: url(https://img2.akspic.ru/crops/7/1/8/8/0/108817/108817-bumaga-belye-monoxromnyj_rejim-risovanie-led-2560x1440.jpg) no-repeat center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: #58585e;
+  
+  }
+  
+  .authpage{
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .login-html {
+    z-index:-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 90px 70px 50px 70px;
+    background: rgba(44,44,44,.5);
+  }
+
+  .labelauth{
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+
+    /* MainColor */
+
+    color: #2C2C2C;
+    text-align: left;
+}
+
+.labelr {
+    width: 30px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.inputauth{
+    background: #EEEEEE;
+/* FieldsColor */
+
+width: 350px;
+height: 35px;
+border: 1px solid #EEEEEE;
+border-radius: 60px;
+}
+
+
+
+.head {
+    margin-top: 15px;
+    color: #2C2C2C;
+    text-align: center;
+}
+
+.hr {
+    width: 500px;
+    height: 2px;
+    margin: 15px 0 15px 0;
+    background: #2C2C2C;
+}
+
+.hr2 {
+    width: 500px;
+    height: 2px;
+    margin-right:   70px;
+   
+    background: #2C2C2C;
+}
+
+.but {
+    width: 300px;
+    background-color: #1161ee;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+.but:hover {
+    background-color: #0b0e1e;
+}
+
+
+.radio{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    align-items:center;
+    margin-bottom: 10px;
+}
+.rad {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.author {
+    width: 300px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.formauth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,53 @@
+2022/10/22 20:23:16 [info] 22#22: *3 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:23:16 [info] 21#21: *1 client 172.21.0.1 closed keepalive connection
+2022/10/22 20:23:26 [info] 23#23: *6 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:23:26 [info] 20#20: *4 client 172.21.0.1 closed keepalive connection
+2022/10/22 20:23:36 [info] 24#24: *7 client 172.21.0.1 closed keepalive connection
+2022/10/22 20:23:36 [info] 25#25: *9 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:24:18 [error] 26#26: *10 open() "/var/www/html/vhvhkvhkv" failed (2: No such file or directory), client: 172.21.0.1, server: , request: "GET /vhvhkvhkv HTTP/1.1", host: "localhost"
+2022/10/22 20:24:26 [info] 26#26: *10 client 172.21.0.1 closed keepalive connection
+2022/10/22 20:24:26 [info] 27#27: *11 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:26:11 [info] 21#21: *12 client 172.21.0.1 closed keepalive connection
+2022/10/22 20:26:11 [info] 21#21: *14 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:28:32 [info] 22#22: *3 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:28:32 [info] 21#21: *1 client 172.21.0.1 closed keepalive connection
+2022/10/22 20:28:47 [info] 24#24: *7 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:28:47 [info] 23#23: *5 client 172.21.0.1 closed keepalive connection
+2022/10/22 20:29:17 [info] 25#25: *8 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:30:07 [info] 26#26: *9 client 172.21.0.1 closed keepalive connection
+2022/10/22 20:30:07 [info] 27#27: *11 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:32:17 [info] 28#28: *12 client 172.21.0.1 closed keepalive connection
+2022/10/22 20:32:17 [info] 21#21: *14 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:35:07 [info] 22#22: *2 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:35:07 [info] 21#21: *1 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:37:27 [info] 21#21: *1 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:37:27 [info] 22#22: *2 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:37:57 [info] 24#24: *4 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:37:57 [info] 23#23: *3 client 172.21.0.1 closed keepalive connection
+2022/10/22 20:41:13 [info] 26#26: *8 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:41:13 [info] 25#25: *6 client 172.21.0.1 closed keepalive connection
+2022/10/22 20:42:23 [info] 28#28: *16 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2022/10/22 20:42:23 [info] 27#27: *14 client 172.21.0.1 closed keepalive connection
+2022/10/22 20:43:23 [info] 21#21: *3 client closed connection while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2022/10/22 20:43:23 [info] 20#20: *1 client 172.22.0.1 closed keepalive connection
+2022/10/22 20:44:28 [info] 21#21: *1 client 172.22.0.1 closed keepalive connection
+2022/10/22 20:44:28 [info] 22#22: *3 client closed connection while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2022/10/22 20:44:38 [info] 23#23: *4 client 172.22.0.1 closed keepalive connection
+2022/10/22 20:44:38 [info] 24#24: *6 client closed connection while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2022/10/22 20:44:48 [info] 26#26: *8 client closed connection while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2022/10/22 20:44:48 [info] 25#25: *7 client closed connection while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2022/10/22 20:45:48 [info] 27#27: *9 client 172.22.0.1 closed keepalive connection
+2022/10/22 20:45:48 [info] 28#28: *11 client closed connection while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2022/10/22 20:46:48 [info] 21#21: *1 client 172.22.0.1 closed keepalive connection
+2022/10/22 20:46:48 [info] 20#20: *3 client closed connection while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2022/10/22 20:48:53 [error] 21#21: *1 open() "/var/www/html/mirror/api/v1/reviews" failed (2: No such file or directory), client: 172.22.0.1, server: , request: "GET /mirror/api/v1/reviews HTTP/1.1", host: "localhost"
+2022/10/22 20:48:53 [error] 21#21: *1 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/mirror/api/v1/reviews"
+2022/10/22 20:48:58 [info] 21#21: *1 client 172.22.0.1 closed keepalive connection
+2022/10/22 20:48:58 [info] 22#22: *2 client closed connection while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2022/10/22 20:49:08 [info] 23#23: *3 client 172.22.0.1 closed keepalive connection
+2022/10/22 20:49:08 [info] 24#24: *5 client closed connection while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2022/10/22 20:54:39 [info] 22#22: *3 client closed connection while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2022/10/22 20:54:39 [info] 20#20: *1 client 172.22.0.1 closed keepalive connection
+2022/10/22 20:55:33 [error] 20#20: *1 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/mirror1/api/v1/reviews"
+2022/10/22 20:55:34 [info] 21#21: *3 client closed connection while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2022/10/22 20:55:34 [info] 20#20: *1 client 172.22.0.1 closed keepalive connection

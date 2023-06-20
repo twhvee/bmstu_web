@@ -1,0 +1,59 @@
+.blockRev{
+    background: url(https://eus-www.sway-cdn.com/s/2pxW2zTzC9NMHGh0/images/TKlS3YjuDn7MGB?quality=1920&allowAnimation=true) no-repeat center;
+    width: 100%;
+    height: 860px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .blockRev-text{
+    margin-top: 250px;
+    font-family: 'Inter';
+    font-size: 34px;
+    color:#957230;
+  }
+  
+  .buttonHome{
+    margin-top: 50px;
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    background-color: #EEEEEE;
+    border-radius: 70px;
+    border-color: #2C2C2C;
+    color:#2C2C2C;
+  }
+
+  .blockAbout{
+    margin-bottom: 30px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h3{
+    font-family: 'Inria Serif';
+    color:#957230;
+  }
+
+.blocktext{
+    width: 350px;
+    height: 140px;
+    font-family: 'Inter';
+    color:#8D8F92;
+    font-size: 14;
+    margin: 40px 140px;
+}
+
+
+  i{
+    color:#957230;
+  }
+
+  .bookhome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }

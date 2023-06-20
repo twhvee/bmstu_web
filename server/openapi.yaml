@@ -1,0 +1,645 @@
+openapi: 3.0.3
+info:
+  title: Swagger Book reviews
+  description: |-
+   A website for people who love reading, which will simplify the search for new books.
+  contact:
+    email: vi.sysoeva1506@gmail.com
+  version: 1.0.11
+servers:
+  - url: https://reworld.swagger.io/api/v3
+tags:
+  - name: review
+    description: User's opinion about the book
+  - name: comment
+    description: Users' response or rating to reviews
+  - name: user
+    description: Operations about user
+  - name: book
+    description: Books for which users can write a review
+  - name: tag
+    description: The keyword by which reviews are grouped
+paths:
+  /reveiw:
+    patch:
+      tags:
+        - review
+      summary: Update an number of likes on review
+      description: Update an number of likes on review by Id
+      operationId: updateReview
+      requestBody:
+        description: Update an number of likes on review 
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Review'
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Review'          
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Review not found
+        '405':
+          description: Validation exception
+    post:
+      tags:
+        - review
+      summary: Add a new review
+      description: Add a new review 
+      operationId: addReview
+      requestBody:
+        description: Create a new review 
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Review'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Review'          
+        '405':
+          description: Invalid input
+    get:
+      tags:
+        - review
+      summary: Finds all reviews
+      operationId: GetAllReviews
+      responses:
+        '200':
+          description: successful operation. Return array of review
+          content:
+            application/json:
+              schema:
+                  $ref: '#/components/schemas/Review'          
+        '404':
+          description: Reviews not found
+  /review/{reviewId}:
+    get:
+      tags:
+        - review
+      summary: Find review by ID
+      description: Returns a single review
+      operationId: getReviewById
+      parameters:
+        - name: reviewId
+          in: path
+          description: ID of review to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Review'          
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Review not found
+    delete:
+      tags:
+        - review
+      summary: Deletes a review
+      description: delete a review
+      operationId: deleteReview
+      parameters:
+        - name: api_key
+          in: header
+          description: ''
+          required: false
+          schema:
+            type: string
+        - name: reviewId
+          in: path
+          description: Review id to delete
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '400':
+          description: Invalid review value
+  /review/findByTags:
+    get:
+      tags:
+        - review
+      summary: Finds reviews by tags
+      description: Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.
+      operationId: findReviewsByTags
+      parameters:
+        - name: tags
+          in: query
+          description: Tags to filter by
+          required: false
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Review'          
+        '400':
+          description: Invalid tag value
+  /comment:
+    patch:
+      tags:
+        - comment
+      summary: Update an number of likes on comment
+      description: Update an number of likes on comment by Id
+      operationId: updateComment
+      requestBody:
+        description: Update an number of likes on comment 
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comment'
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'          
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Comment not found
+        '405':
+          description: Validation exception
+    post:
+      tags:
+        - comment
+      summary: Add a new comment
+      description: Add a new comment
+      operationId: addComment
+      requestBody:
+        description: Create a new comment
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comment'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'          
+        '405':
+          description: Invalid input
+  /comment/{commentId}:
+    delete:
+      tags:
+        - comment
+      summary: Deletes a comment
+      description: delete a comment
+      operationId: deleteComment
+      parameters:
+        - name: api_key
+          in: header
+          description: ''
+          required: false
+          schema:
+            type: string
+        - name: commentId
+          in: path
+          description: Comment id to delete
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '400':
+          description: Invalid comment value
+  /book:
+    post:
+      tags:
+        - book
+      summary: Add a new book
+      description: Add a new book
+      operationId: addBook
+      requestBody:
+        description: Create a new book 
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Book'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'          
+        '405':
+          description: Invalid input
+    get:
+      tags:
+        - book
+      summary: Finds all books
+      operationId: GetAllBooks
+      responses:
+        '200':
+          description: successful operation. Return array of book
+          content:
+            application/json:
+              schema:
+                  $ref: '#/components/schemas/Book'          
+        '404':
+          description: Books not found
+  /book/{bookId}:
+    delete:
+      tags:
+        - book
+      summary: Deletes a book
+      description: delete a book
+      operationId: deleteBook
+      parameters:
+        - name: api_key
+          in: header
+          description: ''
+          required: false
+          schema:
+            type: string
+        - name: bookId
+          in: path
+          description: Book id to delete
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '400':
+          description: Invalid book value
+    get:
+      tags:
+        - book
+      summary: Find book by ID
+      description: Returns a single book
+      operationId: getBookById
+      parameters:
+        - name: bookId
+          in: path
+          description: ID of book to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'          
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Book not found
+  /tag:
+    post:
+      tags:
+        - tag
+      summary: Add a new tag
+      description: Add a new tag
+      operationId: addTag
+      requestBody:
+        description: Create a new tag
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tag'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tag'          
+        '405':
+          description: Invalid input
+  /tag/{tagId}:
+    get:
+      tags:
+        - tag
+      summary: Find tag by ID
+      description: Returns a single tag
+      operationId: getTagById
+      parameters:
+        - name: tagId
+          in: path
+          description: ID of tag to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tag'          
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Tag not found
+  /user:
+    get:
+      tags:
+        - user
+      summary: Finds all users
+      operationId: GetAllUsers
+      responses:
+        '200':
+          description: successful operation. Return array of user
+          content:
+            application/json:
+              schema:
+                  $ref: '#/components/schemas/User'          
+        '404':
+          description: Users not found
+  /user/login:
+    get:
+      tags:
+        - user
+      summary: Logs user into the system
+      description: ''
+      operationId: loginUser
+      parameters:
+        - name: username
+          in: query
+          description: The user name for login
+          required: false
+          schema:
+            type: string
+        - name: password
+          in: query
+          description: The password for login in clear text
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          headers:
+            X-Rate-Limit:
+              description: calls per hour allowed by the user
+              schema:
+                type: integer
+                format: int32
+            X-Expires-After:
+              description: date in UTC when token expires
+              schema:
+                type: string
+                format: date-time
+          content:
+            application/json:
+              schema:
+                type: string
+        '400':
+          description: Invalid username/password supplied
+  /user/logout:
+    get:
+      tags:
+        - user
+      summary: Logs out current logged in user session
+      description: ''
+      operationId: logoutUser
+      parameters: []
+      responses:
+        default:
+          description: successful operation
+  /user/{username}:
+    get:
+      tags:
+        - user
+      summary: Get user by user name
+      description: ''
+      operationId: getUserByName
+      parameters:
+        - name: username
+          in: path
+          description: 'The name that needs to be fetched. Use user1 for testing. '
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'          
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Invalid username supplied
+        '404':
+          description: User not found
+  /user/Registration:
+    post:
+      tags:
+        - user
+      summary: Register user
+      description: Add a new user
+      operationId: addUser
+      requestBody:
+        description: Create a new user 
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'          
+        '405':
+          description: Invalid input
+  /user/{userId}:
+    delete:
+      tags:
+        - user
+      summary: Deletes a user
+      description: delete a user
+      operationId: deleteUser
+      parameters:
+        - name: api_key
+          in: header
+          description: ''
+          required: false
+          schema:
+            type: string
+        - name: userId
+          in: path
+          description: User id to delete
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '400':
+          description: Invalid user value
+    get:
+      tags:
+        - user
+      summary: Find user by ID
+      description: Returns a single user
+      operationId: getUserById
+      parameters:
+        - name: userId
+          in: path
+          description: ID of user to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'          
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: User not found
+
+   
+  
+    
+components:
+  schemas:
+    Review:
+      type: object
+      properties:
+        Reviewid:
+          type: integer
+          format: int64
+          example: 10
+        UserId:
+          type: integer
+          format: int64
+          example: 3
+        BookId:
+          type: integer
+          format: int32
+          example: 7
+        Title:
+          type: string
+          example: Good book
+        NumLikes:
+          type: integer
+          format: int32
+          example: 102
+        ReviewData:
+          type: string
+          example: Good book.
+        PublicDate:
+          type: string
+          format: date-time
+          example: 2008-10-23 10:37:22.
+    Comment:
+      type: object
+      properties:
+        CommentId:
+          type: integer
+          format: int64
+          example: 10
+        UserId:
+          type: integer
+          format: int64
+          example: 3
+        ReviewId:
+          type: integer
+          format: int32
+          example: 7
+        NumLikes:
+          type: integer
+          format: int32
+          example: 102
+        CommentData:
+          type: string
+          example: Good book.
+        PublicDate:
+          type: string
+          format: date-time
+          example: 2008-10-23 10:37:22.
+    Book:
+      type: object
+      properties:
+        BookId:
+          type: integer
+          format: int64
+          example: 10
+        BookName:
+          type: string
+          example: Harry Potter.
+        Author:
+          type: string
+          example: J. K. Rowling.
+        Path:
+          type: string
+          example: gfftntn.jpg
+    Tag:
+      type: object
+      properties:
+        TagId:
+          type: integer
+          format: int64
+          example: 10
+        TagName:
+          type: string
+          example: Classic.
+    User:
+      type: object
+      properties:
+        UserId:
+          type: integer
+          format: int64
+          example: 10
+        Login:
+          type: string
+          example: Vicky.
+        Password:
+          type: string
+          example: dslnjbhahrkanhirhihnkrahhrvkahrihr.
+        Email:
+          type: string
+          example: veesysoeva@gmail.com
+        Avatar:
+          type: string
+          example: photo1.jpg
+        Access_rol:
+          type: string
+          example: user
+
+      

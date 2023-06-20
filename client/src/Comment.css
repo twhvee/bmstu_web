@@ -1,0 +1,142 @@
+
+
+.ComCard{
+    width: 604px;
+    height: 180px;
+    margin: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+.butblock{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-right: 30px;
+
+}
+.blockcomment{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.colcomment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 190px;
+
+}
+
+.comDate{
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    /* TextColorPrimary */
+
+    color: #8D8F92;
+}
+
+.textCom{
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 40px;
+    
+
+    /* TextColorPrimary */
+
+    color: #8D8F92;
+}
+
+
+.addcom{
+    font-family: 'Inria Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+background: #2C2C2C;
+border-radius: 70px;
+border-color: #2C2C2C;
+height: 70px;
+width: 160px;
+margin-left: 60px;
+}
+
+.formcom{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockcom{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+}
+
+.deletecom{
+    padding-top: 20px;
+    margin-left: 200px;
+    border: none;
+    background: white;
+    height: 30px;
+    width: 30px;
+}
+
+.inputcom{
+    background: #EEEEEE;
+/* FieldsColor */
+
+border: 1px solid #EEEEEE;
+border-radius: 60px;
+height: 85px;
+width: 600px;
+}
+
+.blockuserinfo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+.imgavatar{
+   
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+
+.logincom{
+   
+    float: right;
+
+}
